@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # find opencv
 find_package( OpenCV REQUIRED )
-include_directories( ${OpenCV_INCLUDE_DIRS} )
+include_directories( ${OpenCV_INCLUDE_DIRS} src include )
 
 
 # fetch glfw
@@ -48,11 +48,14 @@ target_include_directories(imgui_lib PUBLIC
 target_link_libraries(imgui_lib PUBLIC glfw)
 
 
-add_executable(launch_monitor src/main.cpp)
+add_executable(launch_monitor
+    src/main.cpp
+    src/detect.cpp
+    src/calculate.cpp
+ )
 target_link_libraries(launch_monitor PRIVATE imgui_lib ${OpenCV_LIBS})
 
 
-if(WIN32)
-    target_link_libraries(launch_monitor PRIVATE opengl32)
-endif()
+find_package(OpenGL REQUIRED)
+target_link_libraries(launch_monitor PRIVATE OpenGL::GL)
 

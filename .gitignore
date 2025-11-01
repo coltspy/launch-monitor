@@ -5,9 +5,6 @@ cmake-build-*/
 Debug/
 Release/
 
-CLAUDE.md
-
-
 # Visual Studio
 .vs/
 *.suo
@@ -23,7 +20,7 @@ CLAUDE.md
 *.cachefile
 *.VC.db
 *.VC.VC.opendb
-
+.vscode
 # CLion
 .idea/
 
