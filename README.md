@@ -1,5 +1,7 @@
-![Menu Screenshot](menu.png)
-
+<p float="left">
+  <img src="menu.png" height="400" style="margin-right: 20px;" />
+  <img src="monitor.jpg" height="400" />
+</p>
 Tracks golf ball speed, launch angle, and estimated carry distance using two vertically-stacked cameras with IR illumination. When a ball passes through the detection zone, the system captures burst frames and calculates metrics based on timing and position changes.
 
 Hardware
