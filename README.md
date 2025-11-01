@@ -1,3 +1,5 @@
+![Menu Screenshot](menu.png)
+
 Tracks golf ball speed, launch angle, and estimated carry distance using two vertically-stacked cameras with IR illumination. When a ball passes through the detection zone, the system captures burst frames and calculates metrics based on timing and position changes.
 
 Hardware
@@ -33,15 +35,14 @@ What works
 
 Issues & TODO
 
-**Current problems:**
+Current problems:
 - Cameras have narrow FOV - ball needs to be pretty close to the monitor
 - IR lighting needs to be stronger/better positioned for consistent detection
 - Detection threshold (200 brightness) may need tuning based on lighting conditions
 - Frame rate caps out at 120fps which is decent but higher would be better for accuracy
 
 Need to do:
-- Better IR lighting setup (current setup is inconsistent)
+- Better IR lighting setup
 - Spin detection (would need to see ball dimples/markings)
 - Save/load camera settings so you don't have to flip/swap every time
-- Tune detection parameters (area, circularity thresholds)
-- Better distance calculation (current formula is simplified)
+- Better distance calculation 
