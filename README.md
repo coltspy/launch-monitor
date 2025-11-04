@@ -11,17 +11,17 @@
 - changing IR light, ~730nm seems to be the sweet spot
 
 - cameras have narrow fov - research lens
-- 
+
 
 
 Tracks golf ball speed, launch angle, and estimated carry distance using two vertically-stacked cameras with IR illumination. When a ball passes through the detection zone, the system captures burst frames and calculates metrics based on timing and position changes
 
 ## My Hardware
 
-- 2x Innomaker USB cameras (1280x720 @ 120fps, global shutter, monochrome)
+- 2x Innomaker camera modules (120fps, global shutter, monochrome)
 - IR light for ball illumination
 - Cameras mounted 5 inches apart vertically in a case - 2 angles of ball, top down & adjacent
-- Jetson nano development kit
+- NVIDIA Jetson nano development kit
   
 Build & Run
 
